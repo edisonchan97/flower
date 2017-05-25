@@ -1,0 +1,36 @@
+.carousel{
+	background: #999;
+	height: 540px;
+	position: relative;
+	overflow: hidden;
+}
+.carsousel-imgs{
+	/*width: 2880px;*/
+	height: 540px;
+	position: absolute;
+	left:0;
+}
+.carousel img{
+	width: 960px;
+	height: 540px;
+}
+.carousel-btns{
+	/*display: inline-block;*/
+	position: absolute;
+	right:5px;
+	bottom: 5px;
+}
+.carousel-btns li{
+	width: 10px;
+	height: 10px;
+	background: #f09388;
+	display:inline-block;
+	margin-right: 5px;
+}
+.carousel-btns .car-selected{
+	background: #e5412d;
+}
+.dissel{
+	display: none;
+}
+/*轮播图结束*/
