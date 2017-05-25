@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>flower-index</title>
+	<title>flower-cart</title>
 	<link rel="Shortcut Icon" href="favicon.ico">
 	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/cart.css">
 </head>
 <body>
 <div class="header">
@@ -71,77 +71,99 @@
 </div>
 <div id="top-banner">
 	<div class="warpper">
-		<div class="head-banner">
-			<div id="flower-nav">
-			鲜花导购
-			<div class="flower-show">
-			flower of  my lover
-			<!-- < class="flower-title"> -->
-				<h4><a href="#">你的鲜花</a></h4>
-				<hr>
-				<ul>
-					<li><a href="">红花</a></li>
-					<li>红花</li>
-					<li>百花</li>
-					<li>百花</li>
-					<li>黄花</li>
-					<li>黄花</li>
-				</ul>				
-				<h4><a href="#">我的鲜花</a></h4>
-				<hr>
-				<ul>
-					<li>红花</li>
-					<li>红花</li>
-					<li>百花</li>
-					<li>百花</li>
-					<li>黄花</li>
-					<li>黄花</li>
-					<li><a href="">花花草草</a></li>
-					<li><a href="">草草花花</a></li>
-					<li><a href="">草草花花</a></li>
-				</ul>
-				
-				<h4><a href="#">他的鲜花</a></h4>
-				<hr>
-				
-
-			</div>
-			</div>
+		<!-- <div class="head-banner"> -->
+			
 			<div class="top-nav">
 			<ul>
-				<li>首页</li>
-				<li>鲜花</li>
-				<li>蛋糕</li>
-				<li>花篮</li>
+				<li>购物车</li>
+				
 			</ul>
 			</div>
-		</div>
+		<!-- </div> -->
 
 	</div>
 	</div>
-	
+<!-- 导航结束 -->
+<!-- 购物车开始 -->
+
+<div class="flower-cart">
 	<div class="warpper">
-	<div class="carousel">
-		<div class="carsousel-imgs">
-
-				<img src="image/car-01.jpg" alt="">
-			
-				<img src="image/car-01.jpg" alt="">
-			
-				<img src="image/car-01.jpg" alt="">
-
-				<img src="image/car-01.jpg" alt="">
-			
+	<table cellspacing=0>
+			<thead>
+				<tr>
+					<th width="1%">
+						<input id="checkAll" type="checkbox">
+					</th>
+					<th width="1%">No.	</th>
+					<th></th>
+					<th width="50">Qty</th>
+					<th width="80">Price</th>
+					<th width="80">Sum</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="selected">
+					<td>
+						<input type="checkbox" checked class="checkBtn">
+					</td>
+					<td>1	</td>
+					<td>
+						<div class="product">
+							<a href="" class="img-box">
+								<img src="image/f2.jpg" width="80" alt="">
+							</a>
+							<div class="info">
+								<a href="">
+									<h5>Product name goes here</h5>
+									<span>Product Category</span>
+								</a>
+								
+							</div>
+						</div>
+					</td>
+					<td><input type="text" class="ipt"></td>
+					<td>$1,000.00</td>
+					<td>$1,000.00</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" class="checkBtn">
+					</td>
+					<td>2	</td>
+					<td>
+						<div class="product">
+							<a href="" class="img-box">
+								<img src="image/f1.jpg" width="80" alt="">
+							</a>
+							<div class="info">
+								<a href="">
+									<h5>Product name goes here</h5>
+									<span>Product Category</span>
+								</a>
+								
+							</div>
+						</div>
+					</td>
+					<td><input type="text" class="ipt" value="1"></td>
+					<td>$1,000.00</td>
+					<td>$1,000.00</td>
+				</tr>
+				<tfoot>
+				<tr>
+					<td colspan="2">Total:</td>
+					
+					
+					<td colspan="4" class="total-price">$Money</td>
+				</tr>	
+				</tfoot>
+							
+			</tbody>
+		</table>
 		</div>
-		<ul class="carousel-btns">
-			<li class="car-selected"></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
+</div>
 
-	</div>
-	</div>
+<!-- 购物车结束-->
+<!-- 底部开始 -->
 <div class="info">
 	<div class="warpper">
 		<div class="info-title">
