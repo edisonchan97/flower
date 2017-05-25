@@ -1,14 +1,62 @@
 .login{
-	width: 500px;
-	height: 400px;
+	width: 400px;
+/*	height: 450px;*/
 	background: #efefef;
-	margin-left: 180px;
+	margin: 0 auto;
 	margin-top: 25px;
 }
-.login-flower{
-	width: 400px;
-	height: 400px;
-	background: #efefef;
-	margin-left: 180px;
-	margin-top: 25px;
+.login .login-logo{
+	width: 260px;
+	height: 200px;
+	padding-top: 20px;
+	margin: 0 auto;
+}
+.login-logo img{
+	width: 260px;
+	height: 200px;
+}
+/*.login-form span{
+	display: inline-block;
+	background: #234;
+	height: 25px;
+	font-size: 20px;
+
+}*/
+.login-form{
+	margin: 0 auto;
+}
+.login .login-input{
+	margin: 0 78px;
+	/*width:;*/
+	border-color: #aab2bd;
+	height: 34px;
+	font-size: 20px;
+	color: #551e66;
+	margin-top: 20px;
+}
+.login .rem-psd{
+	height: 30px;
+	margin: 0 80px;
+	margin-top: 15px;
+	color: #559;
+	position: relative;
+}
+.login .rem-psd input{
+	position: absolute;
+	margin-right: 10px;
+}
+.login .rem-psd span{
+	position: absolute;
+	margin-left: 20px;
+	top: -3px;
+}
+.login .submit{
+	margin: 10px 50px;
+	padding-left: 50px;
+	padding-bottom: 15px;
+}
+.login .submit input{
+	width: 100px;
+	height: 34px;
+	/*margin-right: 40px;*/
 }
