@@ -96,13 +96,13 @@
 					</th>
 					<th width="1%">No.	</th>
 					<th></th>
-					<th width="50">Qty</th>
+					<th width="80">Qty</th>
 					<th width="80">Price</th>
 					<th width="80">Sum</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr class="selected">
+				<tr class="selected" >
 					<td>
 						<input type="checkbox" checked class="checkBtn">
 					</td>
@@ -121,39 +121,21 @@
 							</div>
 						</div>
 					</td>
-					<td><input type="text" class="ipt"></td>
-					<td>$1,000.00</td>
-					<td>$1,000.00</td>
-				</tr>
-				<tr>
 					<td>
-						<input type="checkbox" class="checkBtn">
+						<button @click="qty==0?0:qty--">-</button>
+						<input type="text" class="ipt" v-model="qty">
+						<button @click="qty++">+</button>
 					</td>
-					<td>2	</td>
-					<td>
-						<div class="product">
-							<a href="" class="img-box">
-								<img src="image/f1.jpg" width="80" alt="">
-							</a>
-							<div class="info">
-								<a href="">
-									<h5>Product name goes here</h5>
-									<span>Product Category</span>
-								</a>
-								
-							</div>
-						</div>
-					</td>
-					<td><input type="text" class="ipt" value="1"></td>
-					<td>$1,000.00</td>
-					<td>$1,000.00</td>
+					<td>${{price}}</td>
+					<td>${{price*qty}}</td>
 				</tr>
+
 				<tfoot>
 				<tr>
 					<td colspan="2">Total:</td>
 					
 					
-					<td colspan="4" class="total-price">$Money</td>
+					<td colspan="4" class="total-price">${{price*qty}}</td>
 				</tr>	
 				</tfoot>
 							
@@ -225,5 +207,7 @@
 	</div>
 </body>
 <script src="js/jquery-1.12.4.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/cart-vue.js"></script>
 <script src="js/comon.js"></script>
 </html>
