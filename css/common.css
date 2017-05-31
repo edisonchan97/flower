@@ -72,6 +72,20 @@ body{
 .menu-right{
 	float: right;
 }
+.menu-right li{
+	position: relative;
+}
+.wechat{
+	width: 100px;
+	height: 100px;
+	background: #888;
+	display: none;
+	position: absolute;
+
+}
+.menu-right li:hover .wechat{
+	display: block;
+}
 .top-menu ul li a{
 	color: #efefef;
 }
@@ -81,10 +95,11 @@ body{
 	margin-right: 5px;
 	color: #efefef;
 }
-.menu-left ul li:first-child:hover{
-	color: #efefef;
-	cursor: default;
-}
+/*.menu-left ul li:first-child:hover{*/
+	/*color: #efefef;*/
+	/*cursor: default;*/
+/*}*/
+
 .menu-right ul li p{
 	color: #ff6a00;
 	display: inline-block;
@@ -217,6 +232,9 @@ body{
 	padding: 0 25px;
 }
 .top-nav li:first-child{
+	background: #999999;
+}
+.top-nav li:hover{
 	background: #999999;
 }
 /*导航栏结束*/

@@ -1,10 +1,23 @@
 $('#skin-btns span').on('click',function(){
+	thiscol =this;
+	console.log(thiscol);
 	$(this).addClass('selected').siblings().removeClass('selected');
 	$('.top').css('background',$(this).attr('skin-color'));
 	$('.flower-show').css('background',$(this).attr('skin-color'));
 	$('#flower-nav').css('background',$(this).attr('skin-color'));
 	$('.top-nav li:first-child').css('background',$(this).attr('skin-color'));
 	$('.login').css('background',$(this).attr('skin-color'));
+	$('.top-nav li').on('mouseover',function(){
+		$(this).css('background',$(thiscol).attr('skin-color'));
+	}).on('mouseout',function(){
+		$(this).css('background','');
+		//$(this).removeAttr('background');
+
+	});
+	//$('.top-nav li').toggle(
+	//	function(){$(this).on('mouseover',function(){
+	//	$(this).css('background',$(thiscol).attr('skin-color'));
+	//})})
 });
 
 
@@ -55,4 +68,10 @@ $('.register').on('click',function(){
 		$(html1).appendTo('.input-form');
 	};
 	
+})
+//鼠标划入出现微信二维码
+$(".menu-left li:last-child").on('mouseover',function(){
+	$('.wechat').css('display','block').css('z-index','1');
+}).on('mouseout',function(){
+	$('.wechat').css('display','none')
 })
