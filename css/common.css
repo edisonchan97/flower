@@ -81,10 +81,10 @@ body{
 	background: #888;
 	display: none;
 	position: absolute;
-
 }
-.menu-right li:hover .wechat{
-	display: block;
+.wechat img{
+	width: 100px;
+	height: 100px;
 }
 .top-menu ul li a{
 	color: #efefef;
